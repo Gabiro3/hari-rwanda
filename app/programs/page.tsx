@@ -28,7 +28,7 @@ export default function ProgramsPage() {
             className="max-w-3xl"
           >
             <AnimatedText
-              text="Our Programs"
+              text="Our  Programs"
               className="text-4xl font-bold tracking-tight md:text-5xl mb-6"
               delay={0.3}
             />

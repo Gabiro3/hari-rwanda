@@ -285,19 +285,21 @@ export default function ContactPage() {
               )}
             </motion.div>
             <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="rounded-xl overflow-hidden h-[400px] lg:h-[600px] relative shadow-lg"
-            >
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Map of HAI Rwanda location"
-                fill
-                className="object-cover"
-              />
-            </motion.div>
+  initial={{ x: 50, opacity: 0 }}
+  whileInView={{ x: 0, opacity: 1 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="rounded-xl overflow-hidden h-[400px] lg:h-[600px] relative shadow-lg"
+>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!4v1743597662042!6m8!1m7!1sl1cx_aoibcLt3k2T_xlUUQ!2m2!1d-1.932404193982911!2d30.07245434706149!3f232.65185202653964!4f-0.517074780466217!5f0.7820865974627469"
+    width="100%" // Make the iframe take up the full width of the container
+    height="100%" // Make the iframe take up the full height of the container
+    style={{ border: 0 }} // Remove iframe border
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</motion.div>
           </div>
         </div>
       </section>

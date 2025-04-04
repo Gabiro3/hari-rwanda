@@ -66,8 +66,8 @@ export default function Home() {
             className="mx-auto max-w-4xl text-center"
           >
             <AnimatedText
-              text="ENGAGING, EDUCATING, AND EMPOWERING COMMUNITIES FOR  SUSTAINABLE  HEALTH."
-              className="mb-6 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl uppercase"
+              text="Empowering  Communities,  Advancing  Health  Equity  through  Digital  Innovation."
+              className="mb-6 text-3xl font-bold tracking-tight md:text-5xl lg:text-5xl uppercase"
               delay={0.5}
             />
             <motion.p
@@ -101,7 +101,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <SectionTitle
             title="Welcome to Health Affairs Initiative"
-            subtitle="At HAI, we focus on tackling pressing health challenges through digital advocacy, education, and innovative community-driven solutions."
+            subtitle="We advance health equity and gender equality by empowering women, adolescents, and underserved communities through education, advocacy, and technology-driven solutions."
             backgroundImage="/placeholder.svg?height=300&width=1920"
           />
 
@@ -119,10 +119,9 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <BookOpen className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Digital Health Education</h3>
+              <h3 className="mb-3 text-xl font-medium">Digital Health & Advocacy</h3>
               <p className="text-muted-foreground">
-                Evidence-based content on SRHR, GBV, and holistic health via social media, podcasts, and community
-                radios.
+              Using media, storytelling, and online campaigns to drive health awareness and policy change.
               </p>
             </motion.div>
             <motion.div
@@ -132,10 +131,9 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <Users className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Community-Led Advocacy</h3>
+              <h3 className="mb-3 text-xl font-medium">Youth-Led Health Initiatives</h3>
               <p className="text-muted-foreground">
-                Training youth leaders and health champions, fostering safe dialogues, and amplifying real stories to
-                drive change.
+              Equipping young leaders with skills in advocacy, leadership, and community action.
               </p>
             </motion.div>
             <motion.div
@@ -145,10 +143,9 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Digital Advocacy</h3>
+              <h3 className="mb-3 text-xl font-medium">Women & Adolescent Health Empowerment</h3>
               <p className="text-muted-foreground">
-                Using social media, petitions, and online campaigns to mobilize communities and hold policymakers
-                accountable.
+              Promoting SRHR, menstrual health, and economic empowerment for women and girls.
               </p>
             </motion.div>
             <motion.div
@@ -158,9 +155,9 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <Award className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Policy & Partnerships</h3>
+              <h3 className="mb-3 text-xl font-medium">Technology for Health & Social Impact</h3>
               <p className="text-muted-foreground">
-                Collaborating with governments, NGOs, and innovators to advocate for gender-responsive health policies.
+              Leveraging mHealth, AI, and e-learning to improve access to health resources.
               </p>
             </motion.div>
           </motion.div>
@@ -389,8 +386,7 @@ export default function Home() {
               <h3 className="mb-1 text-xl font-medium">Samuel Habimana, MSc</h3>
               <p className="mb-4 text-secondary">Founder & Executive Chairperson</p>
               <p className="text-muted-foreground text-sm mb-6">
-                A global health professional committed to advancing health equity and social justice with over a decade
-                of experience.
+              Samuel holds a Master of Science in Global Health Delivery (MSc-GHD) with a specialization in Gender, Sexual, and Reproductive Health from the University of Global Health Equity (UGHE) and a Bachelor of Arts in Healthcare Management from Southern New Hampshire University.
               </p>
               <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
                 <Link href="/about#team">Read Full Bio</Link>
@@ -406,17 +402,17 @@ export default function Home() {
             >
               <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
-                  alt="Team Member"
+                  src="/Rachel Murekatete, MSc.JPG"
+                  alt="Rachel Murekatete"
                   width={128}
                   height={128}
                   className="object-cover"
                 />
               </div>
-              <h3 className="mb-1 text-xl font-medium">Team Member</h3>
-              <p className="mb-4 text-secondary">Position Title</p>
+              <h3 className="mb-1 text-xl font-medium">Rachel Murekatete, MSc</h3>
+              <p className="mb-4 text-secondary">Deputy Executive Director</p>
               <p className="text-muted-foreground text-sm mb-6">
-                Brief description of the team member's background and expertise in the field of health advocacy.
+              Rachel Murekatete is a seasoned public health professional with a strong background in global health, gender equity, and sexual and reproductive health and rights (SRHR). She holds a Master of Science in Global Health Delivery with a focus on Gender and SRHR from UGHE and a Bachelor of Science in Public Health from MKU.
               </p>
               <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
                 <Link href="/about#team">Read Full Bio</Link>
@@ -432,17 +428,17 @@ export default function Home() {
             >
               <div className="mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-primary/20">
                 <Image
-                  src="/placeholder.svg?height=128&width=128"
-                  alt="Team Member"
+                  src="/Dr. Alexandre Dukundane, MD, MSc.JPG"
+                  alt="Dukundane Alexandre"
                   width={128}
                   height={128}
                   className="object-cover"
                 />
               </div>
-              <h3 className="mb-1 text-xl font-medium">Team Member</h3>
-              <p className="mb-4 text-secondary">Position Title</p>
+              <h3 className="mb-1 text-xl font-medium">Dr Dukundane Alexandre, MD, MSc</h3>
+              <p className="mb-4 text-secondary">Director of  Sustainable Health Impact & Funding</p>
               <p className="text-muted-foreground text-sm mb-6">
-                Brief description of the team member's background and expertise in the field of health advocacy.
+              Dr Dukundane Alexandre is a medical doctor and co-founder of Health Affairs Initiatives (HAI), dedicated to enhancing healthcare delivery with a specific focus on maternal, child, neonatal, adolescent, and reproductive health.
               </p>
               <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary/10">
                 <Link href="/about#team">Read Full Bio</Link>

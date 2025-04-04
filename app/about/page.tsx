@@ -7,6 +7,7 @@ import { ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import SectionTitle from "@/components/section-title"
 import AnimatedText from "@/components/animated-text"
+import { teamMembers } from "@/lib/constants"
 
 export default function AboutPage() {
   const containerVariants = {
@@ -49,7 +50,7 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <AnimatedText text="About Us" className="text-4xl font-bold tracking-tight md:text-5xl mb-6" delay={0.3} />
+            <AnimatedText text="About  Us" className="text-4xl font-bold tracking-tight md:text-5xl mb-6" delay={0.3} />
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -82,12 +83,20 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   className="text-muted-foreground"
                 >
-                  Globally, at least 50% of the population lacks essential health services (WHO, 2023), and in
-                  Sub-Saharan Africa, over 600 million people struggle to access basic healthcare (World Bank, 2022).
-                  Despite the rapid growth of digital health technologies, only 25% of people in the region have access
-                  to digital health services (GSMA, 2023), leaving millions behind due to internet limitations,
-                  affordability challenges, and low digital literacy.
+                  Imagine a mother in a rural village, miles away from the nearest clinic, health center, or hospital, struggling to get lifesaving maternal care. Picture a young girl, desperate for answers about her body, yet surrounded by silence and misinformation. Think of a survivor of gender-based violence, isolated and afraid, with nowhere to turn for support.
+                  This is not just their reality—it’s the reality of millions. At least half the world’s population lacks access to essential healthcare (WHO, 2023). In Sub-Saharan Africa, over
+                  <motion.span
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    viewport={{ once: true }}
+                    className="text-primary mx-1"
+                  >
+                    600 million people
+                  </motion.span>
+                  face a broken health system where affordability, digital exclusion, and low health literacy widen the gap. Despite the promise of technology, only 1 in 4 people in the region can access digital health services (GSMA, 2023). The rest? Left behind.
                 </motion.p>
+
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -95,22 +104,27 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   className="text-muted-foreground"
                 >
-                  These disparities have severe consequences. Maternal mortality rates remain alarmingly high at 533
-                  deaths per 100,000 live births, and 35% of women experience gender-based violence (UN Women, 2022). In
-                  Rwanda, 30% of young people lack comprehensive knowledge of sexual and reproductive health (DHS,
-                  2020), contributing to a 5.2% teenage pregnancy rate and an increase in unsafe abortions.
-                </motion.p>
-                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                  viewport={{ once: true }}
-                  className="text-muted-foreground"
-                >
-                  Recognizing these urgent challenges, HAI was established to bridge the gap between communities and
-                  essential health services. Through digital innovation, advocacy, and education, HAI empowers
-                  individuals especially youth and women with the knowledge and tools needed to make informed health
-                  decisions.
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="text-primary font-bold"
+                  >The Consequences are heartbreaking</motion.p>
+                  533 mothers die for every 100,000 births—lives that could be saved with better care.
+                  35% of women endure gender-based violence with little access to help.
+                  30% of Rwandan youth lack crucial sexual and reproductive health knowledge, fueling a 5.2% teenage pregnancy rate and unsafe abortions.
+                  But here’s the truth: It’s not a lack of solutions—it’s a lack of access.
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    viewport={{ once: true }}
+                    className="text-primary font-bold my-2"
+                  >Why HAI Exists</motion.p>
+                  At the Health Affairs Initiative (HAI), we refuse to accept this as normal. We were founded on the belief that health equity is a right, not a privilege. We saw how communities were suffering—not because solutions didn’t exist, but because they weren’t reaching those who needed them most.
+                  Through digital innovation, education, and advocacy, we are breaking down barriers, ensuring that women, youths, and marginalized communities are empowered with the knowledge and tools to make informed health decisions.
+
                 </motion.p>
               </div>
             </motion.div>
@@ -148,8 +162,7 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-muted-foreground">
-                To leverage technology, education, and advocacy to empower communities in Rwanda, particularly women and
-                youth, advancing health equity, gender equality, and sexual and reproductive health.
+              Advancing health equity and gender equality by empowering women, adolescents, and underserved communities through education, advocacy, and technology-driven solutions.
               </p>
             </motion.div>
             <motion.div
@@ -161,8 +174,7 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
               <p className="text-muted-foreground">
-                A world where health equity is a right for all, not a privilege, and everyone has access to the
-                information, resources, and support needed to lead a healthy and dignified life.
+              A healthy, informed, and empowered society where every individual—regardless of gender, age, or background—has the knowledge, resources, and voice to achieve their full potential in health and well-being.
               </p>
             </motion.div>
           </div>
@@ -173,8 +185,8 @@ export default function AboutPage() {
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
           <SectionTitle
-            title="Our Values: The HAI CIRCLE"
-            subtitle="At HAI, our values are at the heart of everything we do. The CIRCLE represents our commitment to health equity, community empowerment, and innovation."
+            title="Our Values: MOVEMENT"
+            subtitle="At HAI, MOVEMENT represents our commitment to action, advocacy, and lasting social impact. Each letter embodies a key principle that drives our work and defines how we create change."
             backgroundImage="/placeholder.svg?height=300&width=1920"
           />
 
@@ -189,60 +201,73 @@ export default function AboutPage() {
               variants={itemVariants}
               className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold mb-3">Collaboration</h3>
+              <h3 className="text-xl font-bold mb-3">M – Mission-Driven</h3>
               <p className="text-muted-foreground">
-                We work hand in hand with communities, partners, and stakeholders to create sustainable and impactful
-                health solutions.
+              We are committed to creating lasting social impact by staying true to our purpose.
+
               </p>
             </motion.div>
             <motion.div
               variants={itemVariants}
               className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold mb-3">Integrity</h3>
+              <h3 className="text-xl font-bold mb-3">O – Opportunity for All</h3>
               <p className="text-muted-foreground">
-                We uphold honesty, transparency, and ethical responsibility in all our initiatives to build trust and
-                accountability.
+              We believe in equity, ensuring everyone has access to health, resources, and opportunities
               </p>
             </motion.div>
             <motion.div
               variants={itemVariants}
               className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold mb-3">Resilience</h3>
+              <h3 className="text-xl font-bold mb-3">V – Voice & Advocacy</h3>
               <p className="text-muted-foreground">
-                We empower communities with the strength, knowledge, and resources to overcome health challenges and
-                thrive.
+              We empower communities to speak up, influence change, and drive policy action.
               </p>
             </motion.div>
             <motion.div
               variants={itemVariants}
               className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold mb-3">Compassion</h3>
+              <h3 className="text-xl font-bold mb-3">E – Empowerment</h3>
               <p className="text-muted-foreground">
-                We are driven by empathy and a deep commitment to ensuring that no one is left behind in the pursuit of
-                health equity.
+              We equip individuals—especially women, youth, and underserved communities—with knowledge and tools to take charge of their health and future.
               </p>
             </motion.div>
             <motion.div
               variants={itemVariants}
               className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold mb-3">Leadership</h3>
+              <h3 className="text-xl font-bold mb-3">M – Mentorship</h3>
               <p className="text-muted-foreground">
-                We inspire and support individuals to take initiative in advocating for better healthcare and social
-                change.
+              We nurture leadership and knowledge-sharing to build a future of informed and empowered individuals.
               </p>
             </motion.div>
             <motion.div
               variants={itemVariants}
               className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
             >
-              <h3 className="text-xl font-bold mb-3">Empowerment</h3>
+              <h3 className="text-xl font-bold mb-3">E – Excellence & Innovation</h3>
               <p className="text-muted-foreground">
-                We equip individuals and communities with the tools, education, and confidence to make informed health
-                decisions and drive change.
+              We use creativity, technology, and data-driven solutions to ensure quality and effectiveness in all we do.
+              </p>
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+            >
+              <h3 className="text-xl font-bold mb-3">N – Nurturing Collaboration</h3>
+              <p className="text-muted-foreground">
+              We believe in partnerships and shared efforts to build sustainable solutions and stronger communities.
+              </p>
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+            >
+              <h3 className="text-xl font-bold mb-3">T – Transformation</h3>
+              <p className="text-muted-foreground">
+              We work toward long-lasting social and health improvements that uplift individuals and communities.
               </p>
             </motion.div>
           </motion.div>
@@ -311,11 +336,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     viewport={{ once: true }}
                   >
-                    Samuel Habimana, MSc is a global health professional, the driving force behind HAI, and an advocate
-                    committed to advancing health equity and social justice. With over a decade of experience in health
-                    advocacy, Operations, research, and community-driven solutions, Samuel leads efforts to tackle
-                    critical health challenges using technology-driven advocacy, community-centered solutions, and
-                    empowerment programs.
+                    With over a decade of experience in health advocacy, Operations, research, and community-driven solutions, Samuel leads efforts to tackle critical health challenges using technology-driven advocacy, community-centered solutions, and empowerment programs. He has successfully designed and implemented several community health projects focused on gender equality and reproductive health using digital space, sports, and creative arts. His research includes impactful studies on intergenerational dialogues aimed at reducing conflicts between teen mothers and their families.
                   </motion.p>
                   <motion.p
                     initial={{ opacity: 0, y: 10 }}
@@ -323,20 +344,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     viewport={{ once: true }}
                   >
-                    He has successfully designed and implemented several community health projects focused on gender
-                    equality, and reproductive health, using digital space, sports, and creative arts. His research
-                    includes impactful studies on intergenerational dialogues aimed at reducing conflicts between teen
-                    mothers and their families.
-                  </motion.p>
-                  <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    viewport={{ once: true }}
-                  >
-                    Samuel holds a Master of Science in Global Health Delivery (MSc-GHD) with a specialization in
-                    Gender, Sexual, and Reproductive Health from the University of Global Health Equity (UGHE) and a
-                    Bachelor of Arts in Healthcare Management from Southern New Hampshire University.
+                    Samuel holds a Master of Science in Global Health Delivery (MSc-GHD) with a specialization in Gender, Sexual, and Reproductive Health from the University of Global Health Equity (UGHE) and a Bachelor of Arts in Healthcare Management from Southern New Hampshire University. His expertise spans advocacy, operations, health program development, and leadership in global health. In addition to his work with HAI, Samuel has partnered with international and regional organizations to empower youth, promote gender equality, and enhance healthcare access across Rwanda and beyond. A passionate innovator and dynamic leader, Samuel believes in the power of collaboration and creative solutions to drive lasting health impact.
                   </motion.p>
                 </div>
               </div>
@@ -345,73 +353,55 @@ export default function AboutPage() {
 
           {/* Team Grid */}
           <motion.div
-            initial="hidden"
-            whileInView="visible"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
+      className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+    >
+      {teamMembers.map((member, index) => (
+        <motion.div
+          key={index}
+          variants={itemVariants}
+          whileHover={{ y: -10 }}
+          className="bg-white p-6 rounded-lg shadow-md"
+        >
+          <div className="flex items-center space-x-4 mb-4">
+            <div className="h-16 w-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">
+              <Image
+                src={member.imageUrl}
+                alt={member.name}
+                width={64}
+                height={64}
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="font-bold">{member.name}</h3>
+              <p className="text-primary text-sm">{member.title}</p>
+            </div>
+          </div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
-            variants={containerVariants}
-            className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+            className="text-muted-foreground text-sm"
           >
-            <motion.div variants={itemVariants} whileHover={{ y: -10 }} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="h-16 w-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Team Member"
-                    width={64}
-                    height={64}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-bold">Team Member Name</h3>
-                  <p className="text-primary text-sm">Position Title</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                Brief description of the team member's background and expertise in the field of health advocacy.
-              </p>
-            </motion.div>
-            <motion.div variants={itemVariants} whileHover={{ y: -10 }} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="h-16 w-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Team Member"
-                    width={64}
-                    height={64}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-bold">Team Member Name</h3>
-                  <p className="text-primary text-sm">Position Title</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                Brief description of the team member's background and expertise in the field of health advocacy.
-              </p>
-            </motion.div>
-            <motion.div variants={itemVariants} whileHover={{ y: -10 }} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center space-x-4 mb-4">
-                <div className="h-16 w-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary/20">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Team Member"
-                    width={64}
-                    height={64}
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <h3 className="font-bold">Team Member Name</h3>
-                  <p className="text-primary text-sm">Position Title</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground text-sm">
-                Brief description of the team member's background and expertise in the field of health advocacy.
-              </p>
-            </motion.div>
-          </motion.div>
+            {member.description1}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="text-muted-foreground text-sm mt-2"
+          >
+            {member.description2}
+          </motion.p>
+        </motion.div>
+      ))}
+    </motion.div>
 
           <div className="text-center mt-12">
             <motion.div
