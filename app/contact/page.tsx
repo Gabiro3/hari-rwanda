@@ -52,7 +52,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/us.jpg"
-            alt="Contact HAI Rwanda"
+            alt="Contact HASO GROUP Rwanda"
             fill
             className="object-cover brightness-50"
           />
@@ -98,8 +98,9 @@ export default function ContactPage() {
                 <Mail className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-3">Email</h3>
-              <p className="text-muted-foreground">info@hairwanda.org</p>
-              <p className="text-muted-foreground">support@hairwanda.org</p>
+              <p className="text-muted-foreground">info@hasogroup.com</p>
+              <p className="text-muted-foreground">ceo@hasogroup.com</p>
+              <p className="text-muted-foreground">healthaffairsinitiative@hasogroup.com</p>
             </motion.div>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -320,9 +321,9 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-xl font-bold mb-2">How can I volunteer with HAI?</h3>
+                <h3 className="text-xl font-bold mb-2">How can I volunteer with HASO GROUP?</h3>
                 <p className="text-muted-foreground">
-                  You can volunteer with HAI by visiting our Get Involved page and filling out the volunteer application
+                  You can volunteer with HASO GROUP by visiting our Get Involved page and filling out the volunteer application
                   form. We have various opportunities available, from community outreach to digital content creation.
                 </p>
               </motion.div>
@@ -336,7 +337,7 @@ export default function ContactPage() {
               >
                 <h3 className="text-xl font-bold mb-2">How are donations used?</h3>
                 <p className="text-muted-foreground">
-                  Donations to HAI directly support our programs in health education, digital health solutions,
+                  Donations to HASO GROUP directly support our programs in health education, digital health solutions,
                   advocacy, and leadership development. We ensure transparency in how funds are allocated and provide
                   regular updates to our donors.
                 </p>
@@ -349,10 +350,10 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-xl font-bold mb-2">Can organizations partner with HAI?</h3>
+                <h3 className="text-xl font-bold mb-2">Can organizations partner with HASO GROUP?</h3>
                 <p className="text-muted-foreground">
                   Yes, we welcome partnerships with organizations that share our vision for health equity. Please
-                  contact us through this form or email us at partnerships@hairwanda.org to discuss potential
+                  contact us through this form or email us at partnerships@HASO GROUPrwanda.org to discuss potential
                   collaboration opportunities.
                 </p>
               </motion.div>
@@ -364,9 +365,9 @@ export default function ContactPage() {
                 viewport={{ once: true }}
                 className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
-                <h3 className="text-xl font-bold mb-2">Where does HAI operate?</h3>
+                <h3 className="text-xl font-bold mb-2">Where does HASO GROUP operate?</h3>
                 <p className="text-muted-foreground">
-                  HAI primarily operates in Rwanda, with a focus on underserved communities. However, our digital health
+                  HASO GROUP primarily operates in Rwanda, with a focus on underserved communities. However, our digital health
                   resources and advocacy work have a broader reach across the region.
                 </p>
               </motion.div>

@@ -83,18 +83,15 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   className="text-muted-foreground"
                 >
-                  Imagine a mother in a rural village, miles away from the nearest clinic, health center, or hospital, struggling to get lifesaving maternal care. Picture a young girl, desperate for answers about her body, yet surrounded by silence and misinformation. Think of a survivor of gender-based violence, isolated and afraid, with nowhere to turn for support.
-                  This is not just their reality—it’s the reality of millions. At least half the world’s population lacks access to essential healthcare (WHO, 2023). In Sub-Saharan Africa, over
-                  <motion.span
+                  Born out of a bold vision to bridge gaps in Africa’s health systems, <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
                     className="text-primary mx-1"
                   >
-                    600 million people
-                  </motion.span>
-                  face a broken health system where affordability, digital exclusion, and low health literacy widen the gap. Despite the promise of technology, only 1 in 4 people in the region can access digital health services (GSMA, 2023). The rest? Left behind.
+                    HASO Group (Health Affairs & Social Opportunities)
+                  </motion.span> was founded to offer smart, scalable, and sustainable non-clinical solutions that strengthen healthcare delivery and promote social impact.
                 </motion.p>
 
                 <motion.p
@@ -104,27 +101,23 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   className="text-muted-foreground"
                 >
-                  <motion.p
+                  Our journey began with a deep belief: that health is not just about hospitals and treatments—it's about systems, people, and the invisible backbone of operations that keeps care running effectively. From navigating complex health operations to driving digital innovation and advocating for equity, HASO Group was created to fill critical gaps in healthcare management, research, and workforce development.
+                </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  viewport={{ once: true }}
+                  className="text-muted-foreground"
+                >
+                  Today, we operate at the intersection of health, business, and social innovation—providing expert non-clinical services, outsourcing solutions, medical tourism support, and strategic advisory for both public and private sector health actors. Our social impact arm, the
+                  <motion.span
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     viewport={{ once: true }}
                     className="text-primary font-bold"
-                  >The Consequences are heartbreaking</motion.p>
-                  533 mothers die for every 100,000 births—lives that could be saved with better care.
-                  35% of women endure gender-based violence with little access to help.
-                  30% of Rwandan youth lack crucial sexual and reproductive health knowledge, fueling a 5.2% teenage pregnancy rate and unsafe abortions.
-                  But here’s the truth: It’s not a lack of solutions—it’s a lack of access.
-                  <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    viewport={{ once: true }}
-                    className="text-primary font-bold my-2"
-                  >Why HAI Exists</motion.p>
-                  At the Health Affairs Initiative (HAI), we refuse to accept this as normal. We were founded on the belief that health equity is a right, not a privilege. We saw how communities were suffering—not because solutions didn’t exist, but because they weren’t reaching those who needed them most.
-                  Through digital innovation, education, and advocacy, we are breaking down barriers, ensuring that women, youths, and marginalized communities are empowered with the knowledge and tools to make informed health decisions.
-
+                  > Health Affairs Initiative</motion.span>, leads programs in health education, youth empowerment, digital health advocacy, and leadership development.
                 </motion.p>
               </div>
             </motion.div>
@@ -162,7 +155,7 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="text-muted-foreground">
-              Advancing health equity and gender equality by empowering women, adolescents, and underserved communities through education, advocacy, and technology-driven solutions.
+              HASO Group exists to bridge the gap between institutional needs and underutilized talent by delivering expert-led, non clinical health services and professional outsourcing solutions. We support institutions and empower individuals through quality service delivery, workforce development, and access to meaningful work. 
               </p>
             </motion.div>
             <motion.div
@@ -174,7 +167,7 @@ export default function AboutPage() {
             >
               <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
               <p className="text-muted-foreground">
-              A healthy, informed, and empowered society where every individual—regardless of gender, age, or background—has the knowledge, resources, and voice to achieve their full potential in health and well-being.
+              To be a leading Network that connects healthcare professionals with impactful career opportunities, while empowering institutions with the tools, and services they need to excel in health and social sectors.
               </p>
             </motion.div>
           </div>
@@ -182,97 +175,84 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 md:py-28 bg-white">
-        <div className="container mx-auto px-4">
-          <SectionTitle
-            title="Our Values: MOVEMENT"
-            subtitle="At HAI, MOVEMENT represents our commitment to action, advocacy, and lasting social impact. Each letter embodies a key principle that drives our work and defines how we create change."
-            backgroundImage="/placeholder.svg?height=300&width=1920"
-          />
+<section className="py-20 md:py-28 bg-white">
+  <div className="container mx-auto px-4">
+    <SectionTitle
+      title="Our Values"
+      subtitle="At HASO Group, our core values reflect our dedication to impactful, inclusive, and innovative work. These principles guide every aspect of our mission and shape the way we serve communities."
+      backgroundImage="/placeholder.svg?height=300&width=1920"
+    />
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={containerVariants}
-            className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-16"
-          >
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">M – Mission-Driven</h3>
-              <p className="text-muted-foreground">
-              We are committed to creating lasting social impact by staying true to our purpose.
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={containerVariants}
+      className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-16"
+    >
+      <motion.div
+        variants={itemVariants}
+        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+      >
+        <h3 className="text-xl font-bold mb-3">Excellence</h3>
+        <p className="text-muted-foreground">
+          We strive for the highest standards in everything we do, ensuring impactful, sustainable outcomes.
+        </p>
+      </motion.div>
 
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">O – Opportunity for All</h3>
-              <p className="text-muted-foreground">
-              We believe in equity, ensuring everyone has access to health, resources, and opportunities
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">V – Voice & Advocacy</h3>
-              <p className="text-muted-foreground">
-              We empower communities to speak up, influence change, and drive policy action.
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">E – Empowerment</h3>
-              <p className="text-muted-foreground">
-              We equip individuals—especially women, youth, and underserved communities—with knowledge and tools to take charge of their health and future.
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">M – Mentorship</h3>
-              <p className="text-muted-foreground">
-              We nurture leadership and knowledge-sharing to build a future of informed and empowered individuals.
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">E – Excellence & Innovation</h3>
-              <p className="text-muted-foreground">
-              We use creativity, technology, and data-driven solutions to ensure quality and effectiveness in all we do.
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">N – Nurturing Collaboration</h3>
-              <p className="text-muted-foreground">
-              We believe in partnerships and shared efforts to build sustainable solutions and stronger communities.
-              </p>
-            </motion.div>
-            <motion.div
-              variants={itemVariants}
-              className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
-            >
-              <h3 className="text-xl font-bold mb-3">T – Transformation</h3>
-              <p className="text-muted-foreground">
-              We work toward long-lasting social and health improvements that uplift individuals and communities.
-              </p>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+      <motion.div
+        variants={itemVariants}
+        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+      >
+        <h3 className="text-xl font-bold mb-3">Empowerment</h3>
+        <p className="text-muted-foreground">
+          We equip individuals and communities with the tools, knowledge, and confidence to shape their own futures.
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={itemVariants}
+        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+      >
+        <h3 className="text-xl font-bold mb-3">Innovation</h3>
+        <p className="text-muted-foreground">
+          We embrace creative problem-solving, leveraging technology and new ideas to tackle complex challenges.
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={itemVariants}
+        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+      >
+        <h3 className="text-xl font-bold mb-3">Collaboration</h3>
+        <p className="text-muted-foreground">
+          We build strong partnerships and inclusive teams, recognizing that shared goals lead to stronger impact.
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={itemVariants}
+        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+      >
+        <h3 className="text-xl font-bold mb-3">Equity</h3>
+        <p className="text-muted-foreground">
+          We champion fairness and justice, ensuring every individual has access to the resources and opportunities they need.
+        </p>
+      </motion.div>
+
+      <motion.div
+        variants={itemVariants}
+        className="bg-muted/50 p-8 rounded-lg hover:shadow-md transition-shadow duration-300"
+      >
+        <h3 className="text-xl font-bold mb-3">Accountability</h3>
+        <p className="text-muted-foreground">
+          We are responsible stewards of our mission, resources, and relationships, committed to transparency and trust.
+        </p>
+      </motion.div>
+    </motion.div>
+  </div>
+</section>
+
 
       {/* Team Section */}
       <section id="team" className="py-20 md:py-28 bg-muted relative">

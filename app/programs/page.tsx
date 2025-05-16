@@ -7,7 +7,7 @@ import { ArrowRight, BookOpen, Heart, Users, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import AnimatedText from "@/components/animated-text"
 
-export default function ProgramsPage() {
+export default function SolutionsPage() {
   return (
     <div>
       {/* Hero Section */}
@@ -15,7 +15,7 @@ export default function ProgramsPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/prog_3.jpg"
-            alt="HAI Rwanda Programs"
+            alt="HAI Rwanda Solutions"
             fill
             className="object-cover brightness-50"
           />
@@ -28,7 +28,7 @@ export default function ProgramsPage() {
             className="max-w-3xl"
           >
             <AnimatedText
-              text="Our  Programs"
+              text="Our  Solutions"
               className="text-4xl font-bold tracking-tight md:text-5xl mb-6"
               delay={0.3}
             />
@@ -38,310 +38,219 @@ export default function ProgramsPage() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="text-lg md:text-xl"
             >
-              At Health Affairs Initiative (HAI), we drive impact through four core program areas designed to address
-              critical health challenges in Rwanda.
+              At HASO Group, we offer integrated, non-clinical solutions that strengthen health systems, empower professionals, and accelerate impact across Africa and beyond.
             </motion.p>
           </motion.div>
         </div>
       </section>
 
-      {/* Program 1: Health Education & Awareness */}
-      <section id="education" className="py-20 md:py-28 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
-                <BookOpen className="h-8 w-8 text-primary" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Health Education & Awareness</h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                Empowering communities with knowledge and resources to make informed health decisions.
-              </p>
-              <div className="space-y-6">
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Digital Health Literacy for All</h3>
-                  <p className="text-muted-foreground">
-                    SRH, maternal health, and disease prevention education via SMS, e-learning, podcasts, and radio.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">My Health, My Rights</h3>
-                  <p className="text-muted-foreground">
-                    Raising awareness on health rights, GBV prevention, and reproductive health through workshops,
-                    training, sports, creative arts competitions, and digital platforms.
-                  </p>
-                </motion.div>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src="/prog_1.jpg"
-                alt="Health Education Program"
-                width={800}
-                height={600}
-                className="rounded-xl object-cover shadow-lg"
-              />
-            </motion.div>
-          </div>
+      {/* Solution 1: Workforce Solutions */}
+<section id="workforce" className="py-20 md:py-28 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
+          <Users className="h-8 w-8 text-primary" />
         </div>
-      </section>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Workforce Solutions</h2>
+        <p className="text-lg text-muted-foreground mb-6">
+          We recruit, deploy, and manage skilled non-clinical healthcare professionals—ranging from project managers to health informatics experts.
+        </p>
+        <div className="space-y-6">
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Outsourcing & Staffing</h3>
+            <p className="text-muted-foreground">
+              We offer flexible hiring models for non-clinical healthcare roles across various specialties and regions.
+            </p>
+          </motion.div>
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Managed Services</h3>
+            <p className="text-muted-foreground">
+              End-to-end talent management and team operations to help health systems scale effectively.
+            </p>
+          </motion.div>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <Image
+          src="/prog_1.jpg"
+          alt="Workforce Solutions"
+          width={800}
+          height={600}
+          className="rounded-xl object-cover shadow-lg"
+        />
+      </motion.div>
+    </div>
+  </div>
+</section>
+{/* Solution 2: Healthcare BPO */}
+<section id="bpo" className="py-20 md:py-28 bg-muted relative">
+  <div className="absolute inset-0 z-0 opacity-10">
+    <Image src="/edut.JPG" alt="Background texture" fill className="object-cover" />
+  </div>
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="order-2 lg:order-1"
+      >
+        <Image
+          src="/edut.JPG"
+          alt="Healthcare BPO"
+          width={800}
+          height={600}
+          className="rounded-xl object-cover shadow-lg"
+        />
+      </motion.div>
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="order-1 lg:order-2"
+      >
+        <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
+          <Heart className="h-8 w-8 text-primary" />
+        </div>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Healthcare BPO</h2>
+        <p className="text-lg text-muted-foreground mb-6">
+          We streamline non-clinical operations like customer support, admin tasks, and data management so healthcare providers can focus on care.
+        </p>
+        <div className="space-y-6">
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Revenue Cycle & Claims Management</h3>
+            <p className="text-muted-foreground">
+              From billing to collections, we manage healthcare finance workflows to improve performance and ROI.
+            </p>
+          </motion.div>
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Customer & Admin Support</h3>
+            <p className="text-muted-foreground">
+              We handle high-volume patient communication and scheduling through omni-channel support teams.
+            </p>
+          </motion.div>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
+{/* Solution 3: Research, Advisory & Innovation */}
+<section id="research" className="py-20 md:py-28 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
+          <BookOpen className="h-8 w-8 text-primary" />
+        </div>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Research, Advisory & Innovation</h2>
+        <p className="text-lg text-muted-foreground mb-6">
+          We help public and private health organizations design, test, and scale evidence-based solutions through expert research and advisory.
+        </p>
+        <div className="space-y-6">
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Health Systems Research</h3>
+            <p className="text-muted-foreground">
+              We conduct operational and implementation research to drive better policies and outcomes.
+            </p>
+          </motion.div>
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Innovation Pilots</h3>
+            <p className="text-muted-foreground">
+              From tech prototypes to service delivery models, we support ideation and pilot testing.
+            </p>
+          </motion.div>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <Image
+          src="/prog_2.jpg"
+          alt="Research & Innovation"
+          width={800}
+          height={600}
+          className="rounded-xl object-cover shadow-lg"
+        />
+      </motion.div>
+    </div>
+  </div>
+</section>
+{/* Solution 4: Medical Tourism Facilitation */}
+<section id="tourism" className="py-20 md:py-28 bg-muted relative">
+  <div className="absolute inset-0 z-0 opacity-10">
+    <Image src="/sustain.jpg" alt="Background texture" fill className="object-cover" />
+  </div>
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <motion.div
+        initial={{ x: -50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="order-2 lg:order-1"
+      >
+        <Image
+          src="/sustain.jpg"
+          alt="Medical Tourism"
+          width={800}
+          height={600}
+          className="rounded-xl object-cover shadow-lg"
+        />
+      </motion.div>
+      <motion.div
+        initial={{ x: 50, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="order-1 lg:order-2"
+      >
+        <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
+          <Award className="h-8 w-8 text-primary" />
+        </div>
+        <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Medical Tourism Facilitation</h2>
+        <p className="text-lg text-muted-foreground mb-6">
+          We connect international patients with top-tier African healthcare providers, managing travel and treatment logistics.
+        </p>
+        <div className="space-y-6">
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Cross-Border Coordination</h3>
+            <p className="text-muted-foreground">
+              We handle scheduling, travel, translation, and pre/post care to ensure a seamless medical journey.
+            </p>
+          </motion.div>
+          <motion.div className="space-y-2">
+            <h3 className="text-xl font-medium">Trusted Provider Network</h3>
+            <p className="text-muted-foreground">
+              We partner with accredited hospitals and specialists across Africa to guarantee high-quality care.
+            </p>
+          </motion.div>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
 
-      {/* Program 2: Digital Health Solutions */}
-      <section id="digital" className="py-20 md:py-28 bg-muted relative">
-        <div className="absolute inset-0 z-0 opacity-10">
-          <Image src="/edut.JPG" alt="Background texture" fill className="object-cover" />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="order-2 lg:order-1"
-            >
-              <Image
-                src="/edut.JPG"
-                alt="Digital Health Solutions"
-                width={800}
-                height={600}
-                className="rounded-xl object-cover shadow-lg"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="order-1 lg:order-2"
-            >
-              <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
-                <Heart className="h-8 w-8 text-primary" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Digital Health Solutions</h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                Leveraging technology to improve access to health information and services.
-              </p>
-              <div className="space-y-6">
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Smart Health Connect</h3>
-                  <p className="text-muted-foreground">
-                    A mobile-friendly platform offering health resources, telemedicine, and emergency contacts.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">GBV Digital Reporting & Response</h3>
-                  <p className="text-muted-foreground">
-                    A confidential reporting tool via WhatsApp/SMS & Website portal, connecting survivors to support
-                    services.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Tech4Health Innovation Lab</h3>
-                  <p className="text-muted-foreground">
-                    Fostering digital health innovations through hackathons, startup incubation, and pilot projects.
-                  </p>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Program 3: Advocacy & Leadership Development */}
-      <section id="advocacy" className="py-20 md:py-28 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
-                <Users className="h-8 w-8 text-primary" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">Advocacy & Leadership Development</h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                Building a movement of health advocates and leaders to drive policy change and community action.
-              </p>
-              <div className="space-y-4 px-4">
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Voices for Change</h3>
-                  <p className="text-muted-foreground">
-                    Youth-led storytelling, social media campaigns, and policy petitions for health rights and equity.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Men as Partners in Health</h3>
-                  <p className="text-muted-foreground">
-                    Engaging men in SRH education, GBV prevention, and family health advocacy.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Young Health Advocates Fellowship</h3>
-                  <p className="text-muted-foreground">
-                    A leadership program training youth in policy engagement, public health, and advocacy.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Women in Health Leadership (WiHL)</h3>
-                  <p className="text-muted-foreground">Empowering women in health leadership and policy dialogue.</p>
-                </motion.div>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <Image
-                src="/prog_2.jpg"
-                alt="Advocacy & Leadership Program"
-                width={800}
-                height={600}
-                className="rounded-xl object-cover shadow-lg"
-              />
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Program 4: Sustainable Health Impact */}
-      <section id="sustainable" className="py-20 md:py-28 bg-muted relative">
-        <div className="absolute inset-0 z-0 opacity-10">
-          <Image src="/sustain.jpg" alt="Background texture" fill className="object-cover" />
-        </div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="order-2 lg:order-1"
-            >
-              <Image
-                src="/sustain.jpg"
-                alt="Sustainable Health Impact"
-                width={800}
-                height={600}
-                className="rounded-xl object-cover shadow-lg"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ x: 50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="order-1 lg:order-2"
-            >
-              <div className="inline-flex items-center justify-center rounded-full bg-primary/10 p-3 mb-6">
-                <Award className="h-8 w-8 text-primary" />
-              </div>
-              <h2 className="text-3xl font-bold tracking-tight md:text-4xl mb-4">
-                Sustainable Health Impact & Funding
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                Ensuring lasting impact and sustainability in global health through innovative strategies.
-              </p>
-              <div className="space-y-6">
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Paid Health Education & Training</h3>
-                  <p className="text-muted-foreground">
-                    Expert-led courses and workshops in Sexual and Reproductive Health (SRH), Gender-Based Violence
-                    (GBV), and Health Advocacy.
-                  </p>
-                </motion.div>
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="space-y-2"
-                >
-                  <h3 className="text-xl font-medium">Consulting & Advisory Services</h3>
-                  <p className="text-muted-foreground">
-                    Comprehensive research support, manuscript writing, and data analysis tailored to health-focused
-                    projects. Expertise in health workforce development and health policy consulting.
-                  </p>
-                </motion.div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action */}
       <section className="py-20 md:py-28 bg-primary text-white relative overflow-hidden">
@@ -363,7 +272,7 @@ export default function ProgramsPage() {
             viewport={{ once: true }}
             className="text-3xl font-bold tracking-tight md:text-4xl mb-6"
           >
-            Support Our Programs
+            Support Our Solutions
           </motion.h2>
           <motion.p
             initial={{ y: 20, opacity: 0 }}
@@ -372,7 +281,7 @@ export default function ProgramsPage() {
             viewport={{ once: true }}
             className="text-lg mb-8 max-w-2xl mx-auto"
           >
-            Your support can help us expand our programs and reach more communities in need. Join us in our mission to
+            Your support can help us expand our Solutions and reach more communities in need. Join us in our mission to
             advance health equity in Rwanda.
           </motion.p>
           <motion.div

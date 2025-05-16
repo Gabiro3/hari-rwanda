@@ -42,11 +42,11 @@ export default function Footer() {
           <motion.div variants={itemVariants}>
             <Link href="/" className="flex items-center mb-6">
               <Image
-                src="/hai-logo.png"
+                src="/haso-group.png"
                 alt="Health Affairs Initiative Logo"
-                width={180}
-                height={60}
-                className="h-12 w-auto bg-white/90 rounded-lg p-1"
+                width={110}
+                height={30}
+                className=" bg-white/90 rounded-lg p-1"
               />
             </Link>
             <p className="mb-6 text-sm opacity-90">
@@ -85,7 +85,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/programs" className="hover:text-white/80 transition-colors">
-                  Our Programs
+                  Our Solutions
                 </Link>
               </li>
               <li>
@@ -155,7 +155,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="mt-12 border-t border-white/20 pt-6 text-center text-sm opacity-90"
         >
-          <p>&copy; {new Date().getFullYear()} Health Affairs Initiative (HAI) Rwanda. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} HASO Group Rwanda. All rights reserved.</p>
         </motion.div>
       </div>
     </footer>

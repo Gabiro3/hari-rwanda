@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { ArrowRight, ChevronRight, Heart, BookOpen, Users, Award, Mail, Phone, MapPin } from "lucide-react"
+import { ArrowRight, ChevronRight, Heart, BookOpen, Users, Award, Mail, Phone, MapPin, FlaskConical, Binoculars, BinocularsIcon, LucideBinoculars } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import SectionTitle from "@/components/section-title"
@@ -86,7 +86,7 @@ export default function Home() {
               className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 justify-center"
             >
               <Button asChild size="lg" className="gradient-bg text-white hover:bg-secondary/90">
-                <Link href="/about">Learn More</Link>
+                <Link href="/about">Explore Our Services</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-primary hover:bg-primary/10 hover:text-white">
                 <Link href="/get-involved">Get Involved</Link>
@@ -100,8 +100,8 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-white">
         <div className="container mx-auto px-4">
           <SectionTitle
-            title="Welcome to Health Affairs Initiative"
-            subtitle="We advance health equity and gender equality by empowering women, adolescents, and underserved communities through education, advocacy, and technology-driven solutions."
+            title="Welcome to HASO Group"
+            subtitle="Empowering non-clinical healthcare professionals and institutions through innovative solutions for health affairs and social opportunities. Join us in transforming healthcare workforces, enabling talent, and providing quality support services to drive impact."
             backgroundImage="/placeholder.svg?height=300&width=1920"
           />
 
@@ -119,9 +119,9 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <BookOpen className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Digital Health & Advocacy</h3>
+              <h3 className="mb-3 text-xl font-medium">Workforce Solutions</h3>
               <p className="text-muted-foreground">
-              Using media, storytelling, and online campaigns to drive health awareness and policy change.
+              We provide skilled non-clinical healthcare professionals through staffing, outsourcing, and managed services to help organizations scale efficiently.
               </p>
             </motion.div>
             <motion.div
@@ -131,9 +131,9 @@ export default function Home() {
               <div className="mb-6 rounded-full bg-primary/10 p-4">
                 <Users className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Youth-Led Health Initiatives</h3>
+              <h3 className="mb-3 text-xl font-medium">Healthcare BPO</h3>
               <p className="text-muted-foreground">
-              Equipping young leaders with skills in advocacy, leadership, and community action.
+              We optimize non-clinical operations like admin, customer service, and revenue cycle management, improving efficiency and allowing providers to focus on care.
               </p>
             </motion.div>
             <motion.div
@@ -141,11 +141,11 @@ export default function Home() {
               className="flex flex-col items-center text-center p-8 rounded-lg bg-muted/50 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="mb-6 rounded-full bg-primary/10 p-4">
-                <Heart className="h-8 w-8 text-primary" />
+                <FlaskConical className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Women & Adolescent Health Empowerment</h3>
+              <h3 className="mb-3 text-xl font-medium">Research, Advisory & Innovation</h3>
               <p className="text-muted-foreground">
-              Promoting SRHR, menstrual health, and economic empowerment for women and girls.
+              We deliver strategic insights and implementation support for health programs through research, advisory services, and innovation for governments and organizations.
               </p>
             </motion.div>
             <motion.div
@@ -153,11 +153,11 @@ export default function Home() {
               className="flex flex-col items-center text-center p-8 rounded-lg bg-muted/50 hover:shadow-lg transition-shadow duration-300"
             >
               <div className="mb-6 rounded-full bg-primary/10 p-4">
-                <Award className="h-8 w-8 text-primary" />
+                <LucideBinoculars className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="mb-3 text-xl font-medium">Technology for Health & Social Impact</h3>
+              <h3 className="mb-3 text-xl font-medium">Medical Tourism Facilitation</h3>
               <p className="text-muted-foreground">
-              Leveraging mHealth, AI, and e-learning to improve access to health resources.
+              We manage comprehensive medical tourism services, linking international patients with African healthcare providers for seamless, high-quality care experiences.
               </p>
             </motion.div>
           </motion.div>
@@ -172,7 +172,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <SectionTitle
             title="Our Impact"
-            subtitle="HAI's initiatives have already transformed thousands of lives across Rwanda and beyond."
+            subtitle="Through our Health Affairs Initivative, we have already transformed thousands of lives across Rwanda and beyond."
             backgroundImage="/placeholder.svg?height=300&width=1920"
             light
           />
@@ -232,10 +232,10 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-5xl font-bold gradient-text mb-3"
               >
-                20+
+                200+
               </motion.p>
               <p className="text-muted-foreground">
-                Survivors of gender-based violence supported with resources and counseling
+                Youth engaged in gender justice campaigns with resources and counseling.
               </p>
             </motion.div>
             <motion.div
@@ -618,7 +618,7 @@ export default function Home() {
                 <Mail className="h-8 w-8 text-primary" />
               </div>
               <h3 className="mb-3 text-xl font-medium">Email</h3>
-              <p className="text-muted-foreground">info@hairwanda.org</p>
+              <p className="text-muted-foreground">socialimpact@hasogroup.com</p>
             </motion.div>
             <motion.div
               initial={{ y: 30, opacity: 0 }}

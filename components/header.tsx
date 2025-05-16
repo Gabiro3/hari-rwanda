@@ -43,11 +43,11 @@ export default function Header() {
         >
           <Link href="/" className="flex items-center">
             <Image
-              src="/hai-logo-bg.png"
+              src="/haso-group.png"
               alt="Health Affairs Initiative Logo"
               width={240}
               height={60}
-              className="h-12 w-auto"
+              className="h-32 w-auto"
             />
           </Link>
         </motion.div>
@@ -87,7 +87,7 @@ export default function Header() {
               href="/programs"
               className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? "text-foreground" : "text-primary"}`}
             >
-              Programs
+              Solutions
             </Link>
           </motion.div>
           <motion.div

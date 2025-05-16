@@ -11,16 +11,12 @@ import './globals.css'
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Health Affairs Initiative (HAI) Rwanda",
+  title: "HASO Group | Health Affairs & Social Opportunities",
   description:
     "Driving positive change in global health by empowering communities, advancing health equity, and leveraging technology for impact.",
-  icons: [
-    {
-      rel: "icon",
-      url: "favicon.png",
-      type: "image/png"
-    }
-  ]
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
